@@ -1,16 +1,28 @@
-
-import restaurateurAvantTout from "../components/page/restaurateurAvantTout.vue"
-import restaurationEntreprise from "../components/page//restaurationEntreprise.vue"
+import restaurationEntreprise from "../components/page/restaurationEntreprise.vue"
+import restaurationScolaire from "../components/page/restaurationScolaire.vue"
+import adapteBesoin from "../components/page/adapteBesoin.vue"
+import demarcheEcoresponsable from "../components/page/demarcheEcoresponsable.vue"
 const nouvelleRoute = [
-{
-    path: "/restaurateurAvantTout",
-    name: "restaurateurAvantTout",
-    component: restaurateurAvantTout
+  {
+    path: "/demarcheEcoresponsable",
+    name: "demarcheEcoresponsable",
+    component: demarcheEcoresponsable
     },
- {
+   {
+    path: "/adapteBesoin",
+    name: "adapteBesoin",
+    component: adapteBesoin
+    },
+    {
     path: "/restaurationEntreprise",
     name: "restaurationEntreprise",
     component: restaurationEntreprise
+    },
+
+  {
+    path: "/restaurationScolaire",
+    name: "restaurationScolaire",
+    component: restaurationScolaire
     },
 ];
 

@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
     <a href="index.html" class="navbar-brand p-0">
       <h4 class="m-0" style="color: #b9121b">
-        <i class="fa fa-user-tie me-2"></i>Despoir
+        <img style="width: 40px !important" src="img/logo1.png" alt="Image" />
       </h4>
     </a>
     <button
@@ -18,7 +18,7 @@
         <a
           href="index.html"
           class="nav-item nav-link active"
-          @click.prevent="routeAccueil()"
+          @click.prevent="affichePage('Accueil')"
           >Accueil</a
         >
         <div class="nav-item dropdown">
@@ -27,18 +27,23 @@
           >
           <div class="dropdown-menu m-0">
             <a
-              href="feature.html"
+              href=""
               class="dropdown-item"
-              @click.prevent="restaurationEntreprise()"
+              @click.prevent="affichePage('restaurationEntreprise')"
               >Restauration d’entreprise
             </a>
-            <a href="team.html" class="dropdown-item">Restauration scolaire</a>
-            <a href="testimonial.html" class="dropdown-item"
+            <a
+              href=""
+              class="dropdown-item"
+              @click.prevent="affichePage('restaurationScolaire')"
+              >Restauration scolaire</a
+            >
+            <!-- <a href="testimonial.html" class="dropdown-item"
               >Service traiteur pour événements</a
             >
             <a href="testimonial.html" class="dropdown-item"
               >Partenariats institutionnels</a
-            >
+            > -->
           </div>
         </div>
         <div class="nav-item dropdown">
@@ -49,18 +54,60 @@
             <a href="price.html" class="dropdown-item"
               >Une expertise locale, un impact national</a
             >
-            <a href="feature.html" class="dropdown-item"
+            <a
+              href=""
+              class="dropdown-item"
+              @click.prevent="affichePage('adapteBesoin')"
               >Des menus adaptés à vos besoins</a
             >
-            <a href="team.html" class="dropdown-item"
+            <!-- <a href="team.html" class="dropdown-item"
               >Une technologie de pointe</a
-            >
-            <a href="testimonial.html" class="dropdown-item"
+            > -->
+            <a
+              href=""
+              class="dropdown-item"
+              @click.prevent="affichePage('demarcheEcoresponsable')"
               >Une démarche écoresponsable</a
             >
           </div>
         </div>
-        <a href="contact.html" class="nav-item nav-link">Nos engagements</a>
+
+        <div class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+            >Nous rejoindre</a
+          >
+          <div class="dropdown-menu m-0">
+            <a href="price.html" class="dropdown-item">Nos Offres d'emploi</a>
+            <a href="feature.html" class="dropdown-item">Espace Candidat</a>
+            <!-- <a href="team.html" class="dropdown-item"
+              >Une technologie de pointe</a
+            > -->
+            <!-- <a href="testimonial.html" class="dropdown-item"
+              >Une démarche écoresponsable</a
+            > -->
+          </div>
+        </div>
+
+        <div class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+            >Nos engagements</a
+          >
+          <div class="dropdown-menu m-0">
+            <a href="price.html" class="dropdown-item"
+              >Restauration sur mesure</a
+            >
+            <a href="feature.html" class="dropdown-item"
+              >Promesse Nutritionnelle</a
+            >
+            <!-- <a href="team.html" class="dropdown-item"
+              >Une technologie de pointe</a
+            > -->
+            <!-- <a href="testimonial.html" class="dropdown-item"
+              >Une démarche écoresponsable</a
+            > -->
+          </div>
+        </div>
+
         <a href="contact.html" class="nav-item nav-link">Qui sommes-nous ?</a>
         <a href="contact.html" class="nav-item nav-link">Contact</a>
       </div>
@@ -102,22 +149,13 @@ export default {
 
   methods: {
     ...mapActions("Utilisateurs", ["login", "getUtilisateur"]),
-    routeAccueil() {
+
+    async affichePage(route_name) {
       this.$router.push({
-        name: "Accueil",
-      });
-    },
-    restaurationEntreprise() {
-      this.$router.push({
-        name: "restaurationEntreprise",
+        name: route_name,
       });
     },
 
-    ContratPrestationServiceSIGDOS() {
-      this.$router.push({
-        name: "restaurateurAvantTout",
-      });
-    },
     activedOptionMenu(route_name) {
       this.$router.push({
         name: route_name,
@@ -132,7 +170,6 @@ export default {
   font-size: 60px;
   font-weight: 600;
   color: #2c3e50;
-
   letter-spacing: 2px;
   text-align: center;
   margin-top: 50px;

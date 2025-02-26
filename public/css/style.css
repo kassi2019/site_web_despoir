@@ -5,7 +5,9 @@
     --light: #F1F3FA;
     --dark: #1C2035;
 }
-
+span{
+    font-size: 60% !important;
+}
 .back-to-top {
     position: fixed;
     display: none;

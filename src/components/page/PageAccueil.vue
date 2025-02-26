@@ -88,7 +88,7 @@
       </button>
     </div>
     <!-- Blog Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container-fluid  wow fadeInUp" data-wow-delay="0.1s">
       <div class="container py-5">
         <div
           class="position-relative pb-3 mb-5 mx-auto"
@@ -265,18 +265,18 @@ img {
 
 img:hover {
   transform: rotate(15deg);
-  filter: grayscale(50%) brightness(1.2);
+  filter: brightness(50%);
   cursor: pointer;
 }
 
 .effet {
-  font-size: 3rem;
+  font-size: 20px;
   font-weight: 600;
   color: #2c3e50;
 
   letter-spacing: 2px;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 5px;
   transition: transform 0.3s ease, color 0.3s ease;
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
