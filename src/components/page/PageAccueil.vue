@@ -88,7 +88,7 @@
       </button>
     </div>
     <!-- Blog Start -->
-    <div class="container-fluid  wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container-fluid wow fadeInUp" data-wow-delay="0.1s">
       <div class="container py-5">
         <div
           class="position-relative pb-3 mb-5 mx-auto"
@@ -119,12 +119,18 @@
                   Entreprises et administrations
                 </h4>
                 <p>
-                  Dans un monde en constante évolution, Despoir vous accompagne
-                  pour proposer à vos collaborateurs des solutions de
-                  restauration en phase avec leurs attentes et en cohérence avec
-                  la politique sociale de votre entreprise.
+                  Dans un monde en perpétuelle évolution, Despoir vous aide à
                 </p>
-                <a class="text-uppercase" href="" style="color: #b9121b"
+                <p>offrir à vos collaborateurs des solutions de restauration</p>
+                <!-- <p>
+                  adaptées à leurs attentes, tout en alignant votre offre avec
+                  la politique sociale de votre entreprise.
+                </p> -->
+                <a
+                  class="text-uppercase"
+                  href=""
+                  style="color: #b9121b"
+                  @click.prevent="affichePage('DetailEntreprises')"
                   >En savoir plus <i class="bi bi-arrow-right"></i
                 ></a>
               </div>
@@ -143,17 +149,22 @@
                 >
               </div>
               <div class="p-4">
-                <h4 class="mb-3" style="color: #b9121b">
-                  Etablissements de santé
-                </h4>
+                <h4 class="mb-3" style="color: #b9121b">Enseignement</h4>
                 <p>
-                  En établissement de santé, nous faisons la part belle au
-                  partage et à l’autonomie. Selon le type de séjour, la
-                  pathologie ou le handicap, nous réinventons la pause repas
-                  pour qu’elle soit toujours un moment privilégié pour manger
-                  bien et aller mieux.
+                  Despoir au service des établissements scolaires Notre mission
+                  : offrir aux jeunes générations une pause déjeuner à la fois
+                  conviviale et équilibrée, tout en leur transmettant le plaisir
+                  d’une alimentation saine et durable.
                 </p>
-                <a class="text-uppercase" href="" style="color: #b9121b"
+                <!-- <p> Des habitudes
+                  </p>
+                  <p>essentielles qui participent à leur bien-être, leur réussite
+                  scolaire et leur épanouissement personnel.</p> -->
+                <a
+                  class="text-uppercase"
+                  href=""
+                  style="color: #b9121b"
+                  @click.prevent="affichePage('DetailEnseignement')"
                   >En savoir plus <i class="bi bi-arrow-right"></i
                 ></a>
               </div>
@@ -171,16 +182,25 @@
                 >
               </div>
               <div class="p-4">
-                <h4 class="mb-3" style="color: #b9121b">
-                  Collectivités et enseignement privé
-                </h4>
+                <h4 class="mb-3" style="color: #b9121b">Collectivités</h4>
                 <p>
-                  Fini l’ennui et la monotonie à l’école, nos chefs réveillent
-                  la cuisine ! De mon 1er resto à Weeky, le concept pionnier
-                  pour attirer les lycéens les plus exigeants, ce sont les
-                  jeunes qui inspirent vos restaurants.
+                  Les collectivités locales L’atout Despoir : un partenariat de
+                  confiance Performance,attractivité,
                 </p>
-                <a class="text-uppercase" href="" style="color: #b9121b"
+                <p>
+                  amélioration des services aux usagers et respect des
+                  réglementations en vigueur…
+                </p>
+                <!-- <p>Pour
+                  accompagner les collectivités locales, nous misons sur une
+                  approche de proximité et proposons des solutions sur mesure,
+                  adaptées à leurs exigences de qualité et de conformité.</p> -->
+                <a
+                  class="text-uppercase"
+                  href=""
+                  style="color: #b9121b"
+                  @click.prevent="affichePage('Detailcollectivites')"
+                  DetailEnseignement
                   >En savoir plus <i class="bi bi-arrow-right"></i
                 ></a>
               </div>
@@ -220,6 +240,7 @@
               class="btn btn-primary py-3 px-5 mt-3 wow zoomIn"
               style="background-color: #b9121b"
               data-wow-delay="0.9s"
+              @click.prevent="affichePage('NousRejoindre')"
               >NOUS REJOINDRE<i class="bi bi-arrow-right"></i
             ></a>
           </div>
@@ -241,11 +262,41 @@
 </template>
 
 <script>
+import { mapGetters, mapActions } from "vuex";
+
 export default {
-  name: "HelloWorld",
+  name: "app",
+
   props: {
-    msg: String,
+    source: String,
   },
+
+  data() {
+    return {
+      user: {
+        email: "",
+        password: "",
+      },
+
+      mydata: false,
+    };
+  },
+
+  created() {},
+  computed: {
+    ...mapGetters("Utilisateurs", []),
+  },
+
+  methods: {
+    ...mapActions("Utilisateurs", ["login", "getUtilisateur"]),
+
+    async affichePage(route_name) {
+      this.$router.push({
+        name: route_name,
+      });
+    },
+  },
+  watch: {},
 };
 </script>
 
@@ -260,7 +311,6 @@ img {
   margin-right: auto;
   width: 500%;
   height: 350%;
- 
 }
 
 img:hover {
@@ -301,8 +351,8 @@ img:hover {
   transition: transform 0.3s ease, color 0.3s ease;
   text-shadow: 14px 14px 14px rgba(0, 0, 0, 0.3);
 }
-.imgcarousel{
-   width: 100% !important; /* L'image prend toute la largeur de son parent */
-    height: auto !important; /* La hauteur s'ajuste automatiquement en fonction de la largeur */
+.imgcarousel {
+  width: 100% !important; /* L'image prend toute la largeur de son parent */
+  height: auto !important; /* La hauteur s'ajuste automatiquement en fonction de la largeur */
 }
 </style>
