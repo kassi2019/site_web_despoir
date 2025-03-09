@@ -239,8 +239,9 @@
               href="quote.html"
               class="btn btn-primary py-3 px-5 mt-3 wow zoomIn"
               style="background-color: #b9121b"
-              data-wow-delay="0.9s"
-              @click.prevent="affichePage('NousRejoindre')"
+               data-wow-delay="0.9s"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"
               >NOUS REJOINDRE<i class="bi bi-arrow-right"></i
             ></a>
           </div>
@@ -258,6 +259,96 @@
       </div>
     </div>
     <!-- About End -->
+
+
+
+
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">NOUS REJOINDRE</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+
+             <div class="container">
+      <div class="box1">
+        <h1 class="mb-3" style="text-align: justify; color: #fff !important">
+          Chez Despoir à chacun sa chance !
+        </h1>
+        <p style="font-size: 20px !important">
+          Despoir recrute près de chez vous. Nous favorisons la proximité et
+          nous œuvrons pour l’accès des jeunes générations à nos métiers
+          (apprentissage, graduate program…). Nous encourageons le retour à
+          l’emploi des personnes éloignées du monde du travail et des personnes
+          en situation de handicap. La diversité de nos métiers et notre
+          politique RH permet à chacun d’avoir sa chance.
+        </p>
+        <p style="font-size: 20px !important">En quête de challenge ?</p>
+        <p style="font-size: 20px !important">
+          Nous vous accompagnons dans votre évolution !
+        </p>
+        <p style="font-size: 20px !important">
+          Chez Despoir, nous nous engageons à vous accueillir, vous former et
+          vous faire évoluer. Notre objectif : assurer votre épanouissement tout
+          au long de votre carrière. L’Académie de Formation Despoir, organisme
+          de formation interne, dispense tout un panel de formations métiers
+          mais aussi des formations pour le développement personnel et des
+          formations en matière de communication et de management. Des parcours
+          de formation diplômants sont également proposés à de nombreux niveaux
+          de fonctions, pour accompagner l’évolution professionnelle de nos
+          collaborateurs.
+        </p>
+      </div>
+
+      <div class="box">
+        <p>
+          <a
+            data-wow-delay="0.9s"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"
+             @click.prevent="affichePage('NousRejoindre')"
+            >Nous rejoindre<i class="bi bi-arrow-right"></i
+          ></a>
+        </p>
+        <p>
+          <a
+            data-wow-delay="0.9s"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop2"
+            >Mobilité interne<i class="bi bi-arrow-right"></i
+          ></a>
+        </p>
+      </div>
+    </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Fermer
+            </button>
+           
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -354,5 +445,33 @@ img:hover {
 .imgcarousel {
   width: 100% !important; /* L'image prend toute la largeur de son parent */
   height: auto !important; /* La hauteur s'ajuste automatiquement en fonction de la largeur */
+}
+
+
+
+
+.container {
+  display: flex; /* Disposition des divs côte à côte */
+  gap: 20px; /* Espacement entre les divs */
+}
+
+.box1 {
+  width: 70%; /* Chaque div prend 45% de la largeur du conteneur */
+  padding: 20px;
+  border: 7px solid #ccc; /* Bordure autour de chaque div */
+  border-radius: 8px; /* Coins arrondis pour une apparence plus douce */
+  box-shadow: 50px 50px 50px rgba(0, 0, 0, 0.2); /* Ombre pour chaque div */
+  color: #fff !important;
+  background-color: rgb(40, 56, 151);
+}
+.box {
+  width: 30%; /* Chaque div prend 45% de la largeur du conteneur */
+  padding: 80px;
+  border: 7px solid #ccc; /* Bordure autour de chaque div */
+  border-radius: 8px; /* Coins arrondis pour une apparence plus douce */
+  box-shadow: 45px 10px 45px rgba(0, 0, 0, 0.2); /* Ombre pour chaque div */
+  font-size: 18px !important;
+  color: #b9121b !important;
+  cursor: pointer;
 }
 </style>

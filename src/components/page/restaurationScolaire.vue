@@ -43,17 +43,17 @@
             <div class="row g-5">
               <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
                 <h6 class="mb-3" style="color: #b9121b; text-align: center">
-                  Pour les crèches
+                  Pour la Maternelle
                 </h6>
                 <div class="blog-item bg-light rounded overflow-hidden ombre">
                   <div class="blog-img position-relative overflow-hidden">
                     <img class="img-fluid" src="img/f1.jpg" alt="" />
-                    <a
+                    <!-- <a
                       class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4"
                       href=""
                       style="background-color: #b9121b !important"
                       >Web Design</a
-                    >
+                    > -->
                   </div>
                   <div class="p-4">
                     <!-- <div class="d-flex mb-3">
@@ -85,17 +85,17 @@
 
               <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
                 <h6 class="mb-3" style="color: #b9121b; text-align: center">
-                  Pour la maternelle, le primaire et secondaire
+                  Pour le primaire
                 </h6>
                 <div class="blog-item bg-light rounded overflow-hidden ombre7">
                   <div class="blog-img position-relative overflow-hidden">
                     <img class="img-fluid" src="img/f2.jpg" alt="" />
-                    <a
+                    <!-- <a
                       class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4"
                       href=""
                       style="background-color: #b9121b !important"
                       >Web Design</a
-                    >
+                    > -->
                   </div>
                   <div class="p-4">
                     <p>
@@ -119,7 +119,7 @@
               </div>
               <div class="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
                 <h6 class="mb-3" style="color: #b9121b; text-align: center">
-                  Pour l'enseignement supérieur
+                  Pour le secondaire et superieur
                 </h6>
                 <div class="blog-item bg-light rounded overflow-hidden ombre">
                   <div class="blog-img position-relative overflow-hidden">
@@ -159,127 +159,7 @@
       </div>
     </div>
 
-    <div class="container-fluid wow fadeInUp" data-wow-delay="0.1s">
-      <div class="container">
-        <div
-          class="position-relative pb-3 mb-5 mx-auto"
-          style="text-align: center"
-        >
-          <p class="mb-0 effet">
-            Pour répondre aux dernières tendances de consommation
-          </p>
-          <br /><br />
-          <p style="text-align: justify !important; font-size: 20px !important">
-            Les attentes des convives évoluent et nos solutions également. Elior
-            a développé son offre à emporter Weeky et Weeky Daily, pour répondre
-            à toutes les envies et tous les emplois du temps.
-          </p>
-        </div>
-
-        <!-- About Start -->
-        <div class="container-fluid wow fadeInUp" data-wow-delay="0.1s">
-          <div class="container">
-            <div class="row g-5">
-              <div class="col-lg-6 wow slideInUp" data-wow-delay="0.3s">
-                <!-- <h6 class="mb-3" style="color: #b9121b; text-align: center">
-                  Pour les crèches
-                </h6> -->
-                <div class="blog-item bg-light rounded overflow-hidden ombre7">
-                  <div class="blog-img position-relative overflow-hidden">
-                    <img class="img-fluid" src="img/wc.jpg" alt="" />
-                    <!-- <a
-                      class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4"
-                      href=""
-                      style="background-color: #b9121b !important"
-                      >Web Design</a
-                    > -->
-                  </div>
-                  <div class="p-4">
-                    <!-- <div class="d-flex mb-3">
-                                <small class="me-3"><i class="far fa-user text-primary me-2"></i>John Doe</small>
-                                <small><i class="far fa-calendar-alt text-primary me-2"></i>01 Jan, 2045</small>
-                            </div> -->
-                    <p
-                      style="
-                        font-weight: 900 !important;
-                        color: #e74c3c !important;
-                      "
-                    >
-                      Weeky
-                    </p>
-                    <p style="font-weight: 900 !important">
-                      Un concept, une cafétéria :
-                    </p>
-                    <p class="page">
-                      <span>Une ambiance tendance et conviviale.</span>
-                      <span
-                        >Une offre pratique et rapide avec la possibilité de
-                        commander en ligne grâce à Weeky Connect.</span
-                      >
-                      <span
-                        >Une offre saine, simple et gourmande pour tous les
-                        goûts et l'image de marque inspirée des concepts de
-                        fast-good familiers de cette cible.</span
-                      >
-                    </p>
-                    <br /><br />
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-6 wow slideInUp" data-wow-delay="0.6s">
-                <!-- <h6 class="mb-3" style="color: #b9121b; text-align: center">
-                  Pour la maternelle, le primaire et secondaire
-                </h6> -->
-                <div class="blog-item bg-light rounded overflow-hidden ombre7">
-                  <div class="blog-img position-relative overflow-hidden">
-                    <img class="img-fluid" src="img/capt1.png" alt="" />
-                    <!-- <a
-                      class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4"
-                      href=""
-                      style="background-color: #b9121b !important"
-                      >Web Design</a
-                    > -->
-                  </div>
-                  <div class="p-4">
-                    <p
-                      style="
-                        font-weight: 900 !important;
-                        color: #e74c3c !important;
-                      "
-                    >
-                      Weeky Daily
-                    </p>
-                    <p style="font-weight: 900 !important">
-                      Une alternative au self basée exclusivement sur un système
-                      de click & collect implantable en self ou en cafétéria :
-                    </p>
-                    <p class="page">
-                      <span
-                        >Un menu inédit, qui casse les codes de la
-                        restauration.</span
-                      >
-                      <span
-                        >Une amélioration les flux grâce à la digitalisation du
-                        service et notre application Weeky Connect.</span
-                      >
-                      <span
-                        >Des plats copieux inspirés des recettes préférées des
-                        adolescents, faciles à emporter et à déguster tout chaud
-                        !</span
-                      >
-                    </p>
-                    <br />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- About End -->
-      </div>
-    </div>
+   
 
     <br /><br />
     <div class="container-fluid wow fadeInUp" data-wow-delay="0.1s">

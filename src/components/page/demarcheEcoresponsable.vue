@@ -42,17 +42,21 @@
           style="text-align: center"
         >
           <h3 class="mb-0 effet" style="font-size: 30px !important">
-            L'amour des bons produits
+            "La passion de la cuisine avant tout"
           </h3>
         </div>
-        <span  style="font-size: 20px !important;"
-          >Parce que nous sommes avant tout des restaurateurs, nous aimons
-          travailler des produits de qualité et respectueux des saisons, tout en
-          cultivant une approche responsable. C'est pourquoi nous favorisons
-          :</span
-        >
+        <span style="font-size: 20px !important"
+          >En tant que cuisiniers et chefs engagés, nous mettons notre
+          savoir-faire au service de vos repas. Chaque jour, nous sélectionnons
+          et travaillons des produits de qualité pour vous offrir des recettes
+          savoureuses, adaptées à vos attentes. En tant que passionnés de
+          restauration, nous privilégions des produits de qualité, respectueux
+          des saisons et issus d’une démarche responsable. C’est dans cet esprit
+          que nous mettons en avant :
+        </span>
       </div>
-    </div><br/><br/>
+    </div>
+    <br /><br />
     <div class="container-fluid wow fadeInUp" data-wow-delay="0.1s">
       <div class="container">
         <div class="row g-5">
@@ -60,12 +64,12 @@
             <div class="blog-item bg-light rounded overflow-hidden ombre7">
               <div class="blog-img position-relative overflow-hidden">
                 <img class="img-fluid" src="img/produits-locaux.jpg" alt="" />
-                <a
+                <!-- <a
                   class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4"
                   href=""
                   style="background-color: #b9121b !important"
                   >Web Design</a
-                >
+                > -->
               </div>
               <div class="p-4">
                 <!-- <div class="d-flex mb-3">
@@ -73,23 +77,31 @@
                                 <small><i class="far fa-calendar-alt text-primary me-2"></i>01 Jan, 2045</small>
                             </div> -->
 
-                <p style="font-weight: 900 !important;font-size: 20px !important;">
-                  Les produits de saison
+                <p
+                  style="
+                    font-weight: 900 !important;
+                    font-size: 20px !important;
+                  "
+                >
+                  Des produits frais et de saison
                 </p>
-                <p class="page" >
-                  <span style="font-size: 20px !important;"
-                    >80% de fruits et légumes de saison en moyenne dans nos
-                    menus</span
+                <p class="page">
+                  <span style="font-size: 20px !important"
+                    >En moyenne, nos menus intègrent 80 % de fruits et légumes
+                    cultivés selon le rythme des saisons.
+                  </span>
+                  <span style="font-size: 20px !important"
+                    >Un choix qui garantit des saveurs authentiques, un goût
+                    préservé et une expérience gustative optimale pour nos
+                    clients.
+                  </span>
+                  <span style="font-size: 20px !important"
+                    >C'est aussi un engagement pour une consommation plus
+                    responsable, en particulier notre impact
+                    environnemental.</span
                   >
-                  <span style="font-size: 20px !important;"
-                    >Pour davantage de saveurs et de goût pour nos
-                    convives</span
-                  >
-                  <span style="font-size: 20px !important;"
-                    >Pour une moindre empreinte carbone et donc une approche
-                    plus responsable</span
-                  >
-                </p><br/><br/>
+                </p>
+                <br /><br />
               </div>
             </div>
           </div>
@@ -98,29 +110,37 @@
             <div class="blog-item bg-light rounded overflow-hidden ombre7">
               <div class="blog-img position-relative overflow-hidden">
                 <img class="img-fluid" src="img/origine-france.jpeg" alt="" />
-                <a
+                <!-- <a
                   class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4"
                   href=""
                   style="background-color: #b9121b !important"
                   >Web Design</a
-                >
+                > -->
               </div>
               <div class="p-4">
-                <p style="font-weight: 900 !important;font-size: 20px !important;">
-                  Les produits d'origine France
+                <p
+                  style="
+                    font-weight: 900 !important;
+                    font-size: 20px !important;
+                  "
+                >
+                  Des produits d'origine Côte d'Ivoire"
                 </p>
                 <p class="page">
-                  <span style="font-size: 20px !important;"
-                    >100% de la volaille fraiche et plus de 50% de nos
-                    approvisionnements origine France</span
+                  <span style="font-size: 20px !important"
+                    >100 % de notre volaille fraîche et plus de 50 % de nos
+                    approvisionnements proviennent de producteurs
+                    ivoiriens.</span
                   >
-                  <span style="font-size: 20px !important;"
-                    >Pour valoriser les producteurs de notre beau pays et une
-                    traçabilité des approvisionnements</span
+                  <span style="font-size: 20px !important"
+                    >Un engagement fort pour soutenir l'agriculture locale,
+                    garantir une meilleure traçabilité et promouvoir le
+                    savoir-faire de notre pays.</span
                   >
-                  <span style="font-size: 20px !important;"
-                    >Pour une moindre empreinte carbone et donc une approche
-                    plus responsable</span
+                  <span style="font-size: 20px !important"
+                    >Cette approche favorise également une consommation plus
+                    responsable en particulier l'empreinte carbone liée aux
+                    importations.</span
                   >
                 </p>
               </div>
@@ -130,28 +150,37 @@
             <div class="blog-item bg-light rounded overflow-hidden ombre7">
               <div class="blog-img position-relative overflow-hidden">
                 <img class="img-fluid" src="img/boulange.jpeg" alt="" />
-                <a
+                <!-- <a
                   class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4"
                   style="background-color: #b9121b !important"
                   href=""
                   >Web Design</a
-                >
+                > -->
               </div>
               <div class="p-4">
-                <p style="font-weight: 900 !important;font-size: 20px !important;">
-                  Les produits de nos régions
+                <p
+                  style="
+                    font-weight: 900 !important;
+                    font-size: 20px !important;
+                  "
+                >
+                  Les richesses de nos régions
                 </p>
                 <p class="page">
-                  <span style="font-size: 20px !important;"
-                    >Plus de 35% de nos fruits et légumes frais dits
-                    responsables (local, bio, labels..) et plus de 500
-                    boulangers locaux pour le pain frais</span
+                  <span style="font-size: 20px !important"
+                    >Plus de 35 % de nos fruits et légumes frais sont issus de
+                    cultures responsables (production locale, agriculture
+                    durable, labels de qualité...), et nous collaborons avec
+                    plus de 500 boulangers ivoiriens pour garantir un pain frais
+                    chaque jour.</span
                   >
-                  <span style="font-size: 20px !important;"
-                    >Pour un ancrage toujours plus fort dans nos territoires et
-                    la valorisation des producteurs de nos régions</span
+                  <span style="font-size: 20px !important"
+                    >Un engagement fort pour soutenir les producteurs locaux,
+                    préserver le savoir-faire régional et renforcer notre
+                    ancrage dans les territoires.</span
                   >
-                </p><br/><br/><br/>
+                </p>
+                <br /><br />
               </div>
             </div>
           </div>
@@ -164,8 +193,8 @@
               style="text-align: center"
             >
               <h3 class="mb-0 effet" style="font-size: 30px !important">
-                Un large réseau de producteurs pour trouver les meilleurs
-                produits
+                Un vaste réseau de producteurs pour sélectionner des produits
+                d'excellence.
               </h3>
             </div>
           </div>
@@ -173,30 +202,33 @@
 
         <div class="row g-5">
           <div class="col-lg-7">
+            <div class="section-title position-relative pb-3 mb-5">
+              <h1 class="mb-0 effet">Un réseau engagé de fournisseurs et d'expertss</h1>
+            </div>
             <div class="mb-4">
               <p class="page">
                 <span style="font-size: 25px !important"
-                  >Plus de 1 200 fournisseurs dont 500 petits fournisseurs nous
-                  accompagnent chaque année</span
+                  >Chaque année, nous collaborons avec plus de 1 200
+                  fournisseurs, dont 500 artisans et petits producteurs, pour
+                  garantir des produits de qualité.</span
                 >
               </p>
               <p class="page">
                 <span style="font-size: 25px !important"
-                  >Une équipe Achats mobilisée au plus près du terrain : un
-                  réseau d'experts au national et en régions au plus près des
-                  producteurs pour aller chercher les produits attendus par vos
-                  convives</span
+                  >Notre équipe Achats est en contact direct avec le terrain,
+                  s'appuie sur un réseau d'experts présents à l'échelle
+                  nationale et locale, afin de répondre aux attentes de vos
+                  convives.</span
                 >
               </p>
 
               <p class="page">
                 <span style="font-size: 25px !important"
-                  >Un véritable partenariat avec nos producteurs pour les
-                  accompagner au quotidien et maîtriser ensemble notre impact
-                  global</span
+                  >Nous entretenons une relation de confiance avec nos
+                  producteurs, les soutenant au quotidien pour une maîtrise
+                  partagée de notre impact économique et environnemental.</span
                 >
               </p>
-
             </div>
           </div>
 
@@ -210,8 +242,6 @@
               />
             </div>
           </div>
-
-
         </div>
       </div>
     </div>
